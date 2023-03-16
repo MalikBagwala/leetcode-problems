@@ -26,3 +26,17 @@ var climbStairs = function (n) {
 
   return z;
 };
+
+function fibonacci(num) {
+  if (num == 1) return 0;
+  if (num == 2) return 1;
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+console.time("climbStairs");
+console.log(climbStairs(48));
+console.timeEnd("climbStairs");
+
+console.time("fibonacci");
+console.log(fibonacci(48 + 2));
+console.timeEnd("fibonacci");
